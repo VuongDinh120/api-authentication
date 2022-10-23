@@ -1,0 +1,109 @@
+{
+    "add": {
+        "properties": {
+            "title": {
+                "type": "string"
+            },
+            "language_id": {
+                "type": "uint16"
+            }
+        },
+        "optionalProperties": {
+            "description": {
+                "type": "string"
+            },
+            "release_year": {
+                "type": "uint16"
+            },
+            "original_language_id": {
+                "type": "uint16"
+            },
+            "rental_duration": {
+                "type": "uint16"
+            },
+            "rental_rate": {
+                "type": "float32"
+            },
+            "length": {
+                "type": "uint16"
+            },
+            "replacement_cost": {
+                "type": "float32"
+            },
+            "rating": {
+                "enum": [
+                    "G",
+                    "PG",
+                    "PG-13",
+                    "R",
+                    "NC-17"
+                ]
+            },
+            "special_features": {
+                "elements": {
+                    "enum": [
+                        "Trailer",
+                        "Commentaries",
+                        "Deleted Scenes",
+                        "Behind the Scenes"
+                    ]
+                }
+            }
+        }
+    },
+    "update": {
+        "properties": {
+            "film_id": {
+                "type": "uint16"
+            }
+        },
+        "optionalProperties": {
+            "title": {
+                "type": "string"
+            },
+            "description": {
+                "type": "string"
+            },
+            "release_year": {
+                "type": "uint16"
+            },
+            "language_id": {
+                "type": "uint16"
+            },
+            "original_language_id": {
+                "type": "uint16"
+            },
+            "rental_duration": {
+                "type": "uint16"
+            },
+            "rental_rate": {
+                "type": "float32"
+            },
+            "length": {
+                "type": "uint16"
+            },
+            "replacement_cost": {
+                "type": "float32"
+            },
+            "rating": {
+                "enum": [
+                    "G",
+                    "PG",
+                    "PG-13",
+                    "R",
+                    "NC-17"
+                ]
+            },
+            "special_features": {
+                "elements": {
+                    "enum": [
+                        "Trailer",
+                        "Commentaries",
+                        "Deleted Scenes",
+                        "Behind the Scenes"
+                    ]
+                }
+            }
+        }
+    }
+}
